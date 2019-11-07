@@ -1,17 +1,24 @@
 package assabi.dto;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@NoArgsConstructor
+@Getter
+@Setter(AccessLevel.PRIVATE)
 public class WeightCreationDTO {
-	private final long group;
-	private final int step;
-	private final Component[] components;
+	private long group;
+	private int step;
+	private Component[] components;
 
-	@Data
+	@NoArgsConstructor
+	@Getter
+	@Setter(AccessLevel.PRIVATE)
 	public static final class Component {
-		private final long weightableId;
-		private final String weightableType;
-		private final double value;
+		private long weightableId;
+		private String weightableType;
+		private double value;
 	}
 }

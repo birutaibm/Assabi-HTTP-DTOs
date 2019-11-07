@@ -2,14 +2,21 @@ package assabi.dto;
 
 import java.util.Optional;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@NoArgsConstructor
+@Getter
+@Setter(AccessLevel.PRIVATE)
 public final class ParticipationDTO {
 	private Long group;
 	private InterpretationDTO interpretation;
 
-	@Data
+	@NoArgsConstructor
+	@Getter
+	@Setter(AccessLevel.PRIVATE)
 	public static final class InterpretationDTO {
 		private Long id;
 		private Long actor;

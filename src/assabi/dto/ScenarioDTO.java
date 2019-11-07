@@ -2,21 +2,30 @@ package assabi.dto;
 
 import java.util.List;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@NoArgsConstructor
+@Getter
+@Setter(AccessLevel.PRIVATE)
 public final class ScenarioDTO {
 	private Long id;
 	private List<CriteriaTreeDTO> dimensions;
 	
-	@Data
+	@NoArgsConstructor
+	@Getter
+	@Setter(AccessLevel.PRIVATE)
 	public static final class CriteriaTreeDTO {
 		private Long id;
 		private String name;
 		private List<CriteriaDTO> criteria;
 	}
 	
-	@Data
+	@NoArgsConstructor
+	@Getter
+	@Setter(AccessLevel.PRIVATE)
 	public static final class CriteriaDTO {
 		private Long id;
 		private String name;

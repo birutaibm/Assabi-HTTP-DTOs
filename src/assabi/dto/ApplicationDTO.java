@@ -2,9 +2,14 @@ package assabi.dto;
 
 import java.util.Map;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@NoArgsConstructor
+@Getter
+@Setter(AccessLevel.PRIVATE)
 public class ApplicationDTO {
 	private String name;
 	private long admin;
