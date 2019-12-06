@@ -22,7 +22,7 @@ public class ExistingApplicationDTO {
 	@AllArgsConstructor
 	@Getter
 	@Setter(AccessLevel.PRIVATE)
-	public class Group {
+	public static final class Group {
 		private Long id;
 		private String name;
 		private List<CharacterDTO> characters; // Character do assabi-back
