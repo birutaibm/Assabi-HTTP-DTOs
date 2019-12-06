@@ -3,22 +3,18 @@ package assabi.dto;
 import java.util.Optional;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter(AccessLevel.PRIVATE)
 public final class ParticipationDTO {
 	private Long group;
 	private InterpretationDTO interpretation;
-
-	public ParticipationDTO(Long group, InterpretationDTO interpretation) {
-		super();
-		this.group = group;
-		this.interpretation = interpretation;
-	}
 
 	@NoArgsConstructor
 	@Getter

@@ -3,11 +3,13 @@ package assabi.dto;
 import java.util.Collection;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter(AccessLevel.PRIVATE)
 public class WeightCreationDTO {
@@ -16,6 +18,7 @@ public class WeightCreationDTO {
 	private Collection<Component> components;
 
 	@NoArgsConstructor
+	@AllArgsConstructor
 	@Getter
 	@Setter(AccessLevel.PRIVATE)
 	public static final class Component {

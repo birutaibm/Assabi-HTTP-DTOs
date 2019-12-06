@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter(AccessLevel.PRIVATE)
 public class DistanceOptionDTO {
@@ -30,6 +31,7 @@ public class DistanceOptionDTO {
 	}
 
 	@NoArgsConstructor
+	@AllArgsConstructor
 	@Getter
 	@Setter(AccessLevel.PRIVATE)
 	public static final class DistanceDimensionDTO {
