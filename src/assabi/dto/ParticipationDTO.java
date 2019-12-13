@@ -1,7 +1,5 @@
 package assabi.dto;
 
-import java.util.Optional;
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,10 +21,6 @@ public final class ParticipationDTO {
 		private Long id;
 		private Long actor;
 		private Long character;
-
-		public Optional<Long> getId() {
-			return Optional.ofNullable(id);
-		}
 
 		public InterpretationDTO(Long id) {
 			super();
