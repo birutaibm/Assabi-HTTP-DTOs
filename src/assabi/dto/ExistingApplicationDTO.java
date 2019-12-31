@@ -16,7 +16,18 @@ public class ExistingApplicationDTO {
 	private Long id;
 	private String name;
 	private ScenarioDTO scenario;
-	private List<Group> groups;
+	private List<Phase> phases;
+
+	@NoArgsConstructor
+	@AllArgsConstructor
+	@Getter
+	@Setter(AccessLevel.PRIVATE)
+	public static final class Phase {
+		private Long id;
+		private String name;
+		private int steps;
+		private List<Group> groups;
+	}
 
 	@NoArgsConstructor
 	@AllArgsConstructor
